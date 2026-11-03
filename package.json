@@ -1,0 +1,18 @@
+{
+  "name": "alur-metric-kol",
+  "version": "1.0.0",
+  "description": "Dashboard Alur Metric KOL - dari database sampai visual",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "db:init": "psql -h localhost -U postgres -d Simulasi_AI -f db/init.sql",
+    "db:seed": "psql -h localhost -U postgres -d Simulasi_AI -f db/seed.sql"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "pg": "^8.11.3"
+  }
+}
